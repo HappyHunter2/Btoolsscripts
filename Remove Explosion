@@ -1,4 +1,4 @@
 for i, v in pairs(game:GetDescendants()) do
-elseif v:IsA("Explosion") then
+if v:IsA("Explosion") then
 		v.BlastPressure = 1
 		v.BlastRadius = 1
