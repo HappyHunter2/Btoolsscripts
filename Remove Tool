@@ -1,0 +1,10 @@
+local Character = script.Parent
+local Humanoid = Character:WaitForChild("Humanoid")
+local HumanoidRootPart = Character:FindFirstChild("HumanoidRootPart")
+local Player = game:GetService("Players"):GetPlayerFromCharacter(Character)
+local Backpack = Player:FindFirstChild("Backpack")
+
+For i,v in pairs (Backpack:GetChildren()) do
+ If v:Isa("Tool")  and v:FindFirstChild("Handle") then
+v.Parent = game.Workspace
+v.Handle.CFrame = HumanoidRootPart.CFrame
