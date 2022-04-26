@@ -1,0 +1,3 @@
+for i, v in pairs(game:GetDescendants()) do
+if v:IsA("Fire") then
+		v.Enabled = false
